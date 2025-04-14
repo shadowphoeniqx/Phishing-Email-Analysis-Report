@@ -23,7 +23,7 @@ The goal of this project was to analyze a phishing email sample using industry-s
 
 ## 📄 Report Summary
 
-The full analysis is documented in [Phishing Email Analysis Report](./Phishing%20Email%20Analysis.md), covering:
+The full analysis is documented in [Phishing Email Analysis Report]([https://github.com/shadowphoeniqx/Phishing-Email-Analysis-Report/blob/main/Main-Report]), covering:
 
 - Sender and recipient validation
 - Brand impersonation tactics
