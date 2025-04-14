@@ -1,0 +1,53 @@
+Step 1: Extracting the Sender and Recipient Information
+The raw email headers were inspected to determine both the source and the intended recipient of the email. Within the headers:
+
+The From: field revealed the sender's email as amazon@zyevantoby.cn, an untrusted and suspicious domain.
+
+The To: field listed the recipient as saintington73@outlook.com, indicating the targeted user.
+
+Step 2: Identifying the Email Subject
+Within the header section, the Subject: line was clearly stated as:
+
+Your Account has been locked
+
+This is a typical subject used to create urgency and trick users into taking immediate action.
+
+Step 3: Verifying the Impersonated Brand
+Through both the From: display name (“Amazn”) and the content of the email, it was evident the attacker was impersonating Amazon. The style, tone, and references to account access and payment further supported this.
+
+Step 4: Capturing the Sent Timestamp
+Using the Date: header:
+
+Wed, 14 Jul 2021 01:40:32 +0900
+
+This gave an exact timestamp of when the phishing email was dispatched.
+
+Step 5: Extracting the Call-to-Action Link
+Within the HTML portion of the email, a "Review Account" button was discovered. Upon examining the encoded base64 content and decoding it, the CTA URL was identified as a long Microsoft SafeLink redirect which led to a suspicious external URL — a common phishing tactic.
+
+Step 6: Reviewing the Linked Page
+Using the decoded link and a preview tool like URL2PNG, the landing page displayed the heading:
+
+Hello Dear Customer, Your account access has been limited.
+
+This confirmed the phishing narrative of account compromise.
+
+Step 7: Identifying Encoding Scheme
+The email body used the following header:
+
+Content-Transfer-Encoding: base64
+
+This confirmed the use of base64 encoding for obfuscating malicious HTML.
+
+Step 8: Detecting Embedded Media
+An <img src="..."> tag in the HTML body pointed to a logo hosted externally, pretending to be an Amazon asset. The logo was sourced from a CDN URL, not from Amazon’s official domain.
+
+Step 9: Discovering a Hidden Facebook Profile Link
+While reviewing all hyperlinks, a Facebook redirect was found within one of the encoded <a href="..."> tags. After decoding the URL, the following user profile was uncovered:
+
+https://www.facebook.com/amir.boyka.7
+
+The username amir.boyka.7 was extracted from this.
+
+Conclusion
+This phishing email leveraged brand impersonation, urgency-based language, hidden redirect links, and base64-encoded HTML to disguise malicious content. It serves as a valuable example for phishing awareness and forensics practice.
