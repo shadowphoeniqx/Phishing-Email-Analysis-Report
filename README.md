@@ -18,6 +18,7 @@ The goal of this project was to analyze a phishing email sample using industry-s
 - Identification of impersonated branding elements
 - Extraction of hidden URLs (including social media profiling links)
 - Safe preview of phishing landing pages
+- > 🔽 **Download the files above** to follow the steps locally password is btlo.
 
 ---
 
