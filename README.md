@@ -23,7 +23,7 @@ The goal of this project was to analyze a phishing email sample using industry-s
 
 ## 📄 Report Summary
 
-The full analysis is documented in can you help me correct this for the github readme "The full analysis is documented in [Phishing Email Analysis Report]([https://github.com/shadowphoeniqx/Phishing-Email-Analysis-Report/blob/main/Main-Report]), covering:
+The full analysis is documented in [Phishing Email Analysis Report]([https://github.com/shadowphoeniqx/Phishing-Email-Analysis-Report/blob/main/Main-Report]), covering:
 
 - Sender and recipient validation
 - Brand impersonation tactics
@@ -31,8 +31,7 @@ The full analysis is documented in can you help me correct this for the github r
 - SafeLink redirect deconstruction
 - Base64 decoding of email body
 - Discovery of hidden Facebook profile link
-- Threat narrative used in the phishing attempt", covering:
-
+- Threat narrative used in the phishing attempt
 - Sender and recipient validation
 - Brand impersonation tactics
 - Suspicious subject and timestamp details
